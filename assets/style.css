@@ -142,7 +142,7 @@ button {
 .header-menu {
   padding: 40px 200px 40px 123px;
   background-color: var(--header-bg-color);
-  backdrop-filter: blur(40.774227142333984px);
+  backdrop-filter: blur(100px);
   transform: translateX(48px);
 }
 
@@ -477,7 +477,7 @@ button {
 
 .technology_section {
   background-image: url("technology/DesktopTechnologyA.jpg");
-  height: 130vh;
+  height: 100%;
 }
 
 .technology_content {
@@ -493,6 +493,7 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding-bottom: 100px;
 }
 
 .tech_info:nth-child(2) {

@@ -82,7 +82,7 @@
   }
   .tech_carousel_nav ul {
     flex-direction: row;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -341,7 +341,7 @@
 @media screen and (max-width: 500px) {
   /* Technology */
   .tech_carousel_nav ul {
-    top: 38%;
+    top: 32%;
   }
   .tech_imgTabl {
     height: 170px;
