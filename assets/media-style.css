@@ -61,9 +61,9 @@
     width: 266px;
     height: 360px;
   }
-  .crew_desc .crew_slider2 .crew_image .crew_img,
-  .crew_desc .crew_slider3 .crew_image .crew_img,
-  .crew_desc .crew_slider4 .crew_image .crew_img {
+  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img,
+  .crew_desc .crew_slider:nth-child(3) .crew_image .crew_img,
+  .crew_desc .crew_slider:nth-child(4) .crew_image .crew_img {
     width: 266px;
     height: 360px;
     right: 0;
@@ -311,9 +311,9 @@
   /* crew */
 
   .crew_right-side .crew_image .crew_img,
-  .crew_desc .crew_slider2 .crew_image .crew_img,
-  .crew_desc .crew_slider3 .crew_image .crew_img,
-  .crew_desc .crew_slider4 .crew_image .crew_img {
+  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img,
+  .crew_desc .crew_slider:nth-child(3) .crew_image .crew_img,
+  .crew_desc .crew_slider:nth-child(4) .crew_image .crew_img {
     width: 180px;
     height: 280px;
   }

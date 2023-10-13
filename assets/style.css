@@ -480,6 +480,10 @@ button {
   height: 130vh;
 }
 
+.technology_content {
+  height: 100%;
+}
+
 .tech_infos {
   position: relative;
 }
