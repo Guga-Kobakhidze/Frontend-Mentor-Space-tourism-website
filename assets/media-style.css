@@ -211,7 +211,7 @@
     padding: 118px 0 0 61px;
     transition: top 0.3s;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.395);
+    background-color: rgba(53, 48, 48, 0.508);
     backdrop-filter: blur(40.774227142333984px);
   }
   .header-menu .navigation {
