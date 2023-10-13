@@ -206,13 +206,13 @@
     right: 0;
     top: -200vh;
     /* transform: translateY(500%); */
-    height: 810px;
+    height: 120vh;
     width: 254px;
     padding: 118px 0 0 61px;
     transition: top 0.3s;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(100px);
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.395);
+    backdrop-filter: blur(40.774227142333984px);
   }
   .header-menu .navigation {
     position: relative;
