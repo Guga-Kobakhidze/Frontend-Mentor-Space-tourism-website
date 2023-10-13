@@ -188,6 +188,9 @@
     width: 300px;
     height: 300px;
   }
+  .destination_right-side .paragraph {
+    height: 215px;
+  }
 
   /* Crew */
 }
@@ -294,6 +297,7 @@
   }
   .destination_right-side .paragraph {
     max-width: 327px;
+    height: 215px;
   }
   .desc_title {
     margin-top: 12px;
