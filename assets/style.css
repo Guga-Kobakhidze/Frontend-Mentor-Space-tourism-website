@@ -1,0 +1,568 @@
+:root {
+  /* Colors */
+  --header-bg-color: rgba(255, 255, 255, 0.04);
+  --main-color-white: #fff;
+  --secondary-color: #d0d6f9;
+
+  --opacity: 0.25;
+  --opacity-hight: 0.5042;
+
+  /* Font Family */
+  --Barlow-ff: "Barlow", sans-serif;
+  --Barlow-Condensed-ff: "Barlow Condensed", sans-serif;
+  --Bellefair-ff: "Bellefair", serif;
+
+  /* Font Sizes */
+  --largest-fs: 150px;
+  --larger-fs: 100px;
+  --large-fs: 56px;
+  --medium-fs: 32px;
+  --small-fs: 28px;
+  --smaller-fs: 18px;
+  --link-fs: 16px;
+
+  /* font weights */
+  --largest-w7: 700;
+  --medium-w4: 400;
+
+  /* Precent */
+  --pre-max: 100%;
+  --z-index-max: 999;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color-white);
+  color: var(--main-color-white);
+  font-size: var(--smaller-fs);
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--Barlow-Condensed-ff);
+  color: var(--main-color-white);
+  font-size: var(--link-fs);
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main_title {
+  font-size: var(--largest-fs);
+  font-family: var(--Bellefair-ff);
+  font-weight: var(--medium-w4);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--larger-fs);
+  font-family: var(--Bellefair-ff);
+  text-transform: uppercase;
+}
+
+.sm_title {
+  font-size: var(--large-fs);
+  font-family: var(--Bellefair-ff);
+  text-transform: uppercase;
+}
+
+.subtitle,
+.desc_title {
+  font-size: var(--small-fs);
+  font-family: var(--Barlow-Condensed-ff);
+  font-weight: var(--medium-w4);
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: var(--secondary-color);
+  font-family: var(--Barlow-ff);
+  line-height: 32px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#home-section,
+.destination_section,
+.crew_section,
+.technology_section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+}
+
+/* Header Section */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 64px 0 0;
+  overflow: hidden;
+  z-index: var(--z-index-max);
+}
+
+.header_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 40px 2%;
+}
+
+.header-menu {
+  padding: 40px 200px 40px 123px;
+  background-color: var(--header-bg-color);
+  backdrop-filter: blur(40.774227142333984px);
+  transform: translateX(48px);
+}
+
+.header-menu .navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header-menu .navigation::before {
+  content: "";
+  position: absolute;
+  left: -560px;
+  top: 50%;
+  width: 473px;
+  height: 1px;
+  background-color: var(--main-color-white);
+  opacity: var(--opacity);
+  z-index: var(--z-index-max);
+}
+
+.header-menu .navigation a span {
+  font-weight: var(--largest-w7);
+  margin-right: 12px;
+}
+
+.header-menu .navigation a,
+.destination_menu .navigation a,
+.navigation a.active {
+  position: relative;
+}
+
+.header-menu .navigation a:hover::before,
+.header-menu .navigation a:focus::before,
+.destination_menu .navigation a:hover::before,
+.destination_menu .navigation a:focus::before,
+.navigation a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color-white);
+}
+
+.nav_toggle,
+.nav_close {
+  display: none;
+}
+
+/* Home Section Page1 */
+
+#home-section {
+  background-image: url("home/DesktopHome.jpg");
+  overflow: hidden;
+}
+
+.home_content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_content .left_side {
+  max-width: 445px;
+  margin: 200px 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home_content .subtitle {
+  color: var(--secondary-color);
+}
+
+.right_side button {
+  position: relative;
+  font-size: var(--medium-fs);
+  font-weight: var(--medium-w4);
+  color: #0b0d17;
+  font-family: var(--Bellefair-ff);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 274px;
+  height: 274px;
+  background-color: var(--main-color-white);
+  border-radius: 50%;
+  margin: 250px 150px 0 0;
+  transition: width 0.3s, height 0.3s;
+}
+
+.right_side button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0;
+  width: 0;
+  background-color: var(--main-color-white);
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: width 0.3s, height 0.3s;
+}
+
+.right_side button:hover::before {
+  width: 450px;
+  height: 450px;
+}
+
+/* Destination Pages */
+
+.destination_section {
+  background-image: url("destination/Desktop-Destination-A.jpg");
+  overflow: hidden;
+}
+
+.moon_content {
+  height: 100%;
+}
+
+.destination_desc {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 160px;
+}
+
+.moon_content .subtitle {
+  padding: 212px 0 100px;
+  margin-left: 180px;
+}
+
+.moon_content .subtitle span {
+  opacity: var(--opacity);
+  margin-right: 28px;
+}
+
+.destination_menu .navigation {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 37px;
+}
+
+.destination_menu .navigation a:hover::before,
+.destination_menu .navigation a:focus::before,
+.destination_menu .navigation a.active::before {
+  bottom: -12px;
+}
+
+.dest_img {
+  animation: rotateImg 60s infinite;
+}
+
+@keyframes rotateImg {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.destination_right-side {
+  max-width: 445px;
+}
+
+.destination_right-side .title {
+  margin-bottom: 14px;
+}
+
+.destination_right-side .paragraph {
+  padding-bottom: 54px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #383b4b;
+}
+
+.destination_right-side .desc {
+  display: flex;
+  align-items: center;
+  gap: 79px;
+}
+
+.destination_right-side .desc span {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-family: var(--Barlow-Condensed-ff);
+  font-weight: var(--medium-w4);
+  text-transform: uppercase;
+  letter-spacing: 2.362px;
+  margin-bottom: 12px;
+}
+
+/* Crew Pages */
+
+.crew_content {
+  height: 100%;
+}
+
+.crew_content.container,
+.technology_content.container {
+  overflow: hidden;
+}
+
+.crew_section {
+  background-image: url("crew/DesktopCrewA.jpg");
+}
+
+.crew_desc {
+  position: relative;
+  display: flex;
+}
+
+.crew_desc .crew_slider:nth-child(2),
+.crew_desc .crew_slider:nth-child(3),
+.crew_desc .crew_slider:nth-child(4) {
+  display: none;
+}
+
+.crew_slider {
+  display: flex;
+  justify-content: start;
+  height: 100%;
+}
+
+.crew_desc .crew_slider:nth-child(2) .crew_image .crew_img {
+  height: 600px;
+  width: 400px;
+}
+
+.crew_desc .crew_slider:nth-child(3) .crew_image .crew_img {
+  height: 620px;
+}
+
+.crew_desc .crew_slider:nth-child(4) .crew_image .crew_img {
+  height: 550px;
+}
+
+.crew_right-side .crew_image .crew_img {
+  position: absolute;
+  bottom: -90px;
+  right: 176px;
+  width: 480px;
+}
+
+.crew_content .subtitle {
+  padding: 212px 0 154px;
+  margin-left: 180px;
+}
+
+.crew_content .subtitle span {
+  opacity: var(--opacity);
+  margin-right: 28px;
+}
+
+.crew_left-side {
+  height: 400px;
+}
+
+.crew_left-side,
+.carousel_nav {
+  margin-left: 180px;
+}
+
+.crew_left-side .sm_title {
+  margin-bottom: 27px;
+}
+
+.crew_left-side .paragraph {
+  margin-bottom: 120px;
+  max-width: 444px;
+}
+
+.crew_title {
+  font-size: var(--medium-fs);
+  font-family: var(--Bellefair-ff);
+  font-weight: var(--medium-w4);
+  text-transform: uppercase;
+  opacity: var(--opacity-hight);
+  margin-bottom: 15px;
+}
+
+.carousel_nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.carousel_nav .slider {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #5f5f5f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel_nav .slider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border: 2px solid var(--main-color-white);
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 0.1s, height 0.1s;
+}
+
+.carousel_nav .slider:hover::after {
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+}
+
+.carousel_nav .slider:hover,
+.carousel_nav .slider.slide-act,
+.tech_carousel_nav .tech_slider.slide-act {
+  background-color: var(--main-color-white);
+  color: #0b0d17;
+}
+
+/* Technology Page */
+
+.technology_section {
+  background-image: url("technology/DesktopTechnologyA.jpg");
+  height: 130vh;
+}
+
+.tech_infos {
+  position: relative;
+}
+
+.tech_info {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.tech_info:nth-child(2) {
+  display: flex;
+}
+
+.technology_content .subtitle {
+  padding: 212px 0 100px;
+  margin-left: 180px;
+}
+
+.technology_content .subtitle span {
+  opacity: var(--opacity);
+  margin-right: 28px;
+}
+
+.tech_subtitle {
+  font-family: var(--Barlow-Condensed-ff);
+  font-size: var(--smaller-fs);
+  font-weight: var(--medium-w4);
+  color: var(--secondary-color);
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.tech_left-side {
+  margin-left: 350px;
+  height: 303px;
+}
+
+.tech_left-side .sm_title {
+  margin-bottom: 17px;
+}
+
+.tech_left-side .paragraph {
+  max-width: 444px;
+}
+
+.tech_image .tech_img {
+  max-width: 515px;
+  width: 100%;
+}
+
+.tech_carousel_nav ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  top: 110px;
+  left: 160px;
+}
+
+.tech_carousel_nav .tech_slider {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--main-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: -1;
+  color: var(--main-color-white);
+  font-size: var(--medium-fs);
+  font-family: var(--Bellefair-ff);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.tech_carousel_nav .tech_slider:hover {
+  background-color: var(--main-color-white);
+  color: #0b0d17;
+}
+
+.tech_imgTabl {
+  display: none;
+}
