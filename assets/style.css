@@ -142,7 +142,7 @@ button {
 .header-menu {
   padding: 40px 200px 40px 123px;
   background-color: var(--header-bg-color);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(40.774227142333984px);
   transform: translateX(48px);
 }
 

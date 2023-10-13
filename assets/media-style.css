@@ -118,7 +118,7 @@
   }
   .header-menu {
     padding: 40px 48px;
-    background-color: var(--header-bg-color);
+    background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
     transform: none;
   }
