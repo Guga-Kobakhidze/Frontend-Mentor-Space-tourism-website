@@ -61,10 +61,14 @@
     width: 266px;
     height: 360px;
   }
-  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img,
   .crew_desc .crew_slider:nth-child(3) .crew_image .crew_img,
   .crew_desc .crew_slider:nth-child(4) .crew_image .crew_img {
-    width: 266px;
+    width: 300px;
+    height: 360px;
+    right: 0;
+  }
+  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img {
+    width: 250px;
     height: 360px;
     right: 0;
   }
@@ -313,12 +317,14 @@
   }
 
   /* crew */
-
+  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img {
+    width: 200px;
+    height: 280px;
+  }
   .crew_right-side .crew_image .crew_img,
-  .crew_desc .crew_slider:nth-child(2) .crew_image .crew_img,
   .crew_desc .crew_slider:nth-child(3) .crew_image .crew_img,
   .crew_desc .crew_slider:nth-child(4) .crew_image .crew_img {
-    width: 180px;
+    width: 230px;
     height: 280px;
   }
   .carousel_nav {
